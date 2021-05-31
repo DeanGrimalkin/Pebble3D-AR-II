@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.ptc.vuforia.engine": {
-      "version": "file:E:/Important Stuff/GTP/AR Development/com.ptc.vuforia.engine",
+      "version": "file:C:/Users/user/Documents/GitHub/com.ptc.vuforia.engine",
       "depth": 0,
       "source": "local",
       "dependencies": {
