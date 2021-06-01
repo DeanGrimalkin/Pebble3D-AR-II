@@ -62,6 +62,12 @@ public class UIScript : MonoBehaviour
     public void LoadN2Plus()
     {
         SceneManager.LoadScene("Raise3D N2Plus");
+
+    }
+
+    public void LoadHelpScene()
+    {
+        SceneManager.LoadScene("HelpScene");
     }
 
     public void LoadWeb()
