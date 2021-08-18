@@ -23,4 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Raise3D N2Plus.unity
     guid: bb4f2c1b557894a44abd412340f8c0e8
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/HelpScene.unity
+    guid: f461f362bc4cb324493205594baeddd6
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: d3176631432fc9d4da2dfba0d62bc508,
+      type: 2}
