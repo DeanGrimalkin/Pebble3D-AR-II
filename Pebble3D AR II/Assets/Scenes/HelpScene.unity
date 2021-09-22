@@ -3618,7 +3618,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'SMISP AR version 1.0.0.003
+  m_text: 'SMISP AR version 1.0.0.004
 
 '
   m_isRightToLeft: 0
