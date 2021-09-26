@@ -609,7 +609,7 @@ RectTransform:
   m_Children:
   - {fileID: 1109402416}
   m_Father: {fileID: 715281333}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1549,7 +1549,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1139216856}
   m_Direction: 2
   m_Value: 0.4999999
-  m_Size: 0.5194805
+  m_Size: 0.51948047
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2095,9 +2095,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\n\nThe temperature set for one of the print cores is too low (below
-    0 \xB0C) or too high (above 350 \xBAC). Please check your print settings in Ultimaker
-    Cura and ensure that the printing temperatures for both print cores are set correctly."
+  m_text: "\n\n\nThe set build plate temperature is too low (below 0 \xB0C). Please
+    check your print settings in Ultimaker Cura and ensure that the build plate temperature
+    is set correctly for the material(s) you are using."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 825554ea6f7764b48953ffe57d9b30f1, type: 2}
   m_sharedMaterial: {fileID: -4733951619563608349, guid: 825554ea6f7764b48953ffe57d9b30f1,
@@ -2164,7 +2164,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &84240757
@@ -3226,7 +3226,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818725802}
+      - m_Target: {fileID: 1460095076}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -3238,7 +3238,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1818725804}
+      - m_Target: {fileID: 1460095078}
         m_TargetAssemblyTypeName: UnityEngine.Video.VideoPlayer, UnityEngine
         m_MethodName: Play
         m_Mode: 1
@@ -3250,7 +3250,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2064683712}
+      - m_Target: {fileID: 1423152884}
         m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
         m_MethodName: Stop
         m_Mode: 1
@@ -5743,7 +5743,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1329324384}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5758,7 +5758,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199076556}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 6f06fde48402c7b47b60c3d5f49bec64, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 568b6eec0d870dd4ca23ab4a9c7d4a75, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -6310,9 +6310,9 @@ RectTransform:
   m_Father: {fileID: 2124929271}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -715}
   m_SizeDelta: {x: 350, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &233401229
@@ -9553,8 +9553,8 @@ MonoBehaviour:
 
 
 
-    This error is usually caused by a poorly connected print head
-    cable. This can be checked by reseating the printhead cable'
+    There is a communication error with the print head. This can
+    be checked by reseating the printhead cable.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 825554ea6f7764b48953ffe57d9b30f1, type: 2}
   m_sharedMaterial: {fileID: -4733951619563608349, guid: 825554ea6f7764b48953ffe57d9b30f1,
@@ -9689,7 +9689,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ER34 - Print head communication error
+  m_text: ER18 - Print head communication error
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 825554ea6f7764b48953ffe57d9b30f1, type: 2}
   m_sharedMaterial: {fileID: -4733951619563608349, guid: 825554ea6f7764b48953ffe57d9b30f1,
@@ -9756,7 +9756,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &350317379
@@ -10392,7 +10392,7 @@ RectTransform:
   m_Children:
   - {fileID: 1031557288}
   m_Father: {fileID: 715281333}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11610,6 +11610,114 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429688880}
   m_Mesh: {fileID: -7490174491826815391, guid: f738b842493f3b2499dd640a2a9bee41, type: 3}
+--- !u!1 &433522730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 433522731}
+  - component: {fileID: 433522734}
+  - component: {fileID: 433522733}
+  - component: {fileID: 433522732}
+  m_Layer: 5
+  m_Name: E24Video
+  m_TagString: Video
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &433522731
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433522730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1329324384}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!328 &433522732
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433522730}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 21c06f2d9f32b06459bc9fbc97d1b7ce, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 41223ebdcd06ee8449cc821c8aee7735, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 2
+  m_AspectRatio: 3
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!114 &433522733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433522730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: 41223ebdcd06ee8449cc821c8aee7735, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &433522734
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433522730}
+  m_CullTransparentMesh: 1
 --- !u!1 &433777977
 GameObject:
   m_ObjectHideFlags: 0
@@ -15326,7 +15434,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1329324384}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -15341,7 +15449,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578659102}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 37415ed63855bba41a1c6aaa6ce86161, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 650af518e2e9ff94d9fe6d22d3080bb3, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -16300,7 +16408,7 @@ GameObject:
   - component: {fileID: 657043655}
   - component: {fileID: 657043654}
   m_Layer: 5
-  m_Name: Error39Link
+  m_Name: Error24Link
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16371,7 +16479,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 576364984}
         m_TargetAssemblyTypeName: OpenURL, Assembly-CSharp
-        m_MethodName: OpenER39Link
+        m_MethodName: OpenER24Link
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17558,13 +17666,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 215011035}
+  - {fileID: 383504762}
   - {fileID: 1075298972}
   - {fileID: 820183019}
   - {fileID: 1523831760}
   - {fileID: 1706383788}
   - {fileID: 1118407687}
   - {fileID: 20241099}
-  - {fileID: 383504762}
   m_Father: {fileID: 1169773713}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20599,7 +20707,7 @@ RectTransform:
   m_Children:
   - {fileID: 1892612457}
   m_Father: {fileID: 715281333}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -23609,7 +23717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &942737731
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26516,7 +26624,7 @@ RectTransform:
   m_Children:
   - {fileID: 2069081266}
   m_Father: {fileID: 715281333}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -27306,9 +27414,9 @@ RectTransform:
   m_Father: {fileID: 2124929271}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -165}
   m_SizeDelta: {x: 350, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1094726910
@@ -27888,7 +27996,7 @@ RectTransform:
   m_Children:
   - {fileID: 1255971049}
   m_Father: {fileID: 715281333}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -28566,8 +28674,8 @@ RectTransform:
   m_Father: {fileID: 246652552}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.24025972}
+  m_AnchorMax: {x: 1, y: 0.7597402}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -28797,7 +28905,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1329324384}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -28812,7 +28920,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144185099}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 7f4ccf51a746d5442bf5dcb3e779fb56, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 5002fd68b0a20e6429f31aa703dff336, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -29955,9 +30063,9 @@ RectTransform:
   m_Father: {fileID: 2124929271}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -385}
   m_SizeDelta: {x: 350, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188086587
@@ -31167,9 +31275,9 @@ RectTransform:
   m_Father: {fileID: 2124929271}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -495}
   m_SizeDelta: {x: 350, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1252093505
@@ -34060,6 +34168,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1460095077}
+  - {fileID: 433522731}
   - {fileID: 199076557}
   - {fileID: 2045918277}
   - {fileID: 578659103}
@@ -35695,24 +35805,32 @@ PlayableDirector:
   m_GameObject: {fileID: 1423152882}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 83ec3dfc14d1e944abd576fa3a600643, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 09602a7eabd49db4caca4641c11597f0, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: -2537576619940064596, guid: 83ec3dfc14d1e944abd576fa3a600643, type: 2}
-    value: {fileID: 457753033}
   - key: {fileID: 0}
     value: {fileID: 2261923296382180737}
-  - key: {fileID: -686598725964516098, guid: 83ec3dfc14d1e944abd576fa3a600643, type: 2}
-    value: {fileID: 2031033479}
   - key: {fileID: -1221079607733927697, guid: 83ec3dfc14d1e944abd576fa3a600643, type: 2}
     value: {fileID: 153330121}
   - key: {fileID: -4701057303966355416, guid: 83ec3dfc14d1e944abd576fa3a600643, type: 2}
     value: {fileID: 1532110131}
   - key: {fileID: 4085530603090518261, guid: 83ec3dfc14d1e944abd576fa3a600643, type: 2}
     value: {fileID: 1915344106}
+  - key: {fileID: 424386752059767537, guid: 09602a7eabd49db4caca4641c11597f0, type: 2}
+    value: {fileID: 2261923296382180737}
+  - key: {fileID: -8386039650401440693, guid: 09602a7eabd49db4caca4641c11597f0, type: 2}
+    value: {fileID: 2031033479}
+  - key: {fileID: -7973152648084562594, guid: 09602a7eabd49db4caca4641c11597f0, type: 2}
+    value: {fileID: 457753033}
+  - key: {fileID: -6863191503831559579, guid: 09602a7eabd49db4caca4641c11597f0, type: 2}
+    value: {fileID: 1532110131}
+  - key: {fileID: 4493336934578639186, guid: 09602a7eabd49db4caca4641c11597f0, type: 2}
+    value: {fileID: 1915344106}
+  - key: {fileID: 7195799175837943192, guid: 09602a7eabd49db4caca4641c11597f0, type: 2}
+    value: {fileID: 153330121}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1432051762
@@ -36109,6 +36227,114 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455659051}
+  m_CullTransparentMesh: 1
+--- !u!1 &1460095076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460095077}
+  - component: {fileID: 1460095080}
+  - component: {fileID: 1460095079}
+  - component: {fileID: 1460095078}
+  m_Layer: 5
+  m_Name: E18Video
+  m_TagString: Video
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1460095077
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460095076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1329324384}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!328 &1460095078
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460095076}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: ab2eb211cb4c6464ca59aa16ca7bf90c, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 41223ebdcd06ee8449cc821c8aee7735, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 2
+  m_AspectRatio: 3
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!114 &1460095079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460095076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: 41223ebdcd06ee8449cc821c8aee7735, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1460095080
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460095076}
   m_CullTransparentMesh: 1
 --- !u!1 &1473091991
 GameObject:
@@ -36618,7 +36844,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1144185101}
+      - m_Target: {fileID: 433522732}
         m_TargetAssemblyTypeName: UnityEngine.Video.VideoPlayer, UnityEngine
         m_MethodName: Stop
         m_Mode: 1
@@ -36630,7 +36856,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1144185099}
+      - m_Target: {fileID: 433522730}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -37693,7 +37919,7 @@ RectTransform:
   m_Children:
   - {fileID: 433777978}
   m_Father: {fileID: 715281333}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -38733,7 +38959,7 @@ GameObject:
   - component: {fileID: 1539805705}
   - component: {fileID: 1539805704}
   m_Layer: 5
-  m_Name: Error34Link
+  m_Name: Error18Link
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38804,7 +39030,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 576364984}
         m_TargetAssemblyTypeName: OpenURL, Assembly-CSharp
-        m_MethodName: OpenER34Link
+        m_MethodName: OpenER18Link
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -41705,9 +41931,9 @@ RectTransform:
   m_Father: {fileID: 2124929271}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -55}
   m_SizeDelta: {x: 350, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1683703587
@@ -41768,7 +41994,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 137372}
         m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
-        m_MethodName: Play
+        m_MethodName: Stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -41826,10 +42052,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1075298971}
+      - m_Target: {fileID: 215011034}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1423152884}
+        m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -41936,7 +42174,7 @@ RectTransform:
   m_Children:
   - {fileID: 2084022601}
   m_Father: {fileID: 715281333}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -42468,7 +42706,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1818725804}
+      - m_Target: {fileID: 1460095078}
         m_TargetAssemblyTypeName: UnityEngine.Video.VideoPlayer, UnityEngine
         m_MethodName: Stop
         m_Mode: 1
@@ -42480,7 +42718,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1818725802}
+      - m_Target: {fileID: 1460095076}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -42492,7 +42730,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2064683712}
+      - m_Target: {fileID: 1423152884}
         m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
         m_MethodName: Stop
         m_Mode: 1
@@ -44830,22 +45068,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1818725802}
+      - m_Target: {fileID: 1460095076}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2064683712}
-        m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
-        m_MethodName: Stop
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -46033,7 +46259,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1329324384}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -46048,7 +46274,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818725802}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 1f43026b92fd19446a74a14bdbba9b9f, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 65f497f350903f24698054f12af3922d, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -46809,7 +47035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1842089824
 RectTransform:
   m_ObjectHideFlags: 0
@@ -47556,7 +47782,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1865948533
@@ -50784,9 +51010,9 @@ RectTransform:
   m_Father: {fileID: 2124929271}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -605}
   m_SizeDelta: {x: 350, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1951280302
@@ -51808,7 +52034,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1144185099}
+      - m_Target: {fileID: 433522730}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -51820,7 +52046,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1144185101}
+      - m_Target: {fileID: 433522732}
         m_TargetAssemblyTypeName: UnityEngine.Video.VideoPlayer, UnityEngine
         m_MethodName: Play
         m_Mode: 1
@@ -52424,7 +52650,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ER39 - Incorrect print temperature specified
+  m_text: ER24 - An incorrect build plate temperature is specified
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 825554ea6f7764b48953ffe57d9b30f1, type: 2}
   m_sharedMaterial: {fileID: -4733951619563608349, guid: 825554ea6f7764b48953ffe57d9b30f1,
@@ -52452,8 +52678,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -52491,7 +52717,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2018140323
@@ -53995,7 +54221,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1329324384}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -54010,7 +54236,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045918276}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: ce1bec6e827af344db8b58b0af30b5aa, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 29a6700b99aba9b4e9f77e6b45e559a1, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -54978,6 +55204,10 @@ PlayableDirector:
     value: {fileID: 1532110131}
   - key: {fileID: 4085530603090518261, guid: 83ec3dfc14d1e944abd576fa3a600643, type: 2}
     value: {fileID: 1915344106}
+  - key: {fileID: -2374003165372957144, guid: 83ec3dfc14d1e944abd576fa3a600643, type: 2}
+    value: {fileID: 2261923296382180737}
+  - key: {fileID: -4904028614858309355, guid: 83ec3dfc14d1e944abd576fa3a600643, type: 2}
+    value: {fileID: 2261923296382180737}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &2069081265
@@ -55410,9 +55640,9 @@ RectTransform:
   m_Father: {fileID: 2124929271}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -275}
   m_SizeDelta: {x: 350, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081028286
@@ -56868,7 +57098,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0.0000052694, y: -199.99997}
-  m_SizeDelta: {x: 350.00006, y: 0}
+  m_SizeDelta: {x: 350.00006, y: 770}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2124929272
 MonoBehaviour:
@@ -57037,7 +57267,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1144185099}
+      - m_Target: {fileID: 433522730}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6

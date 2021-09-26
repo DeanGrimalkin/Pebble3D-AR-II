@@ -15,6 +15,15 @@ public class OpenURL : MonoBehaviour
         Application.OpenURL("https://support.ultimaker.com/hc/en-us/articles/360012490620");
     }
 
+    public void OpenER18Link()
+    {
+        Application.OpenURL("https://support.ultimaker.com/hc/en-us/articles/360011573820-There-is-a-communication-error-with-the-print-head-ER18");
+    }
+
+    public void OpenER24Link()
+    {
+        Application.OpenURL("https://support.ultimaker.com/hc/en-us/articles/360011680879-An-incorrect-build-plate-temperature-is-specified-ER24");
+    }
     public void OpenER27Link()
     {
         Application.OpenURL("https://support.ultimaker.com/hc/en-us/articles/360011574780-ER27-Unspecified-error");
