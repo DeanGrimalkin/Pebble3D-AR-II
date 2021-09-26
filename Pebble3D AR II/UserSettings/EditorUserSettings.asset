@@ -20,6 +20,7 @@ EditorUserSettings:
     RecentlyUsedScenePath-4:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 22424703114646680e0b0227036c6a1c021e152b272d34037867083debf42d
       flags: 0
     RecentlyUsedScenePath-5:
@@ -31,6 +32,15 @@ EditorUserSettings:
       value: 22424703114646680e0b0227036c6d111f041d79086808621d250820acf53a31f6fe
 =======
       value: 22424703114646680e0b0227036c6d111f041d79086808621d250820acf53a31f6fe
+=======
+      value: 22424703114646680e0b0227036c6d111f041d79086808621d250820acf53a31f6fe
+      flags: 0
+    RecentlyUsedScenePath-5:
+      value: 22424703114646680e0b0227036c77151a072b292926237e38271427fb
+      flags: 0
+    RecentlyUsedScenePath-6:
+      value: 22424703114646680e0b0227036c6a1c021e152b272d34037867083debf42d
+>>>>>>> parent of 93bb915 (Revert "Pebble3D AR 1.0.4 Update (In Progress)")
       flags: 0
     RecentlyUsedScenePath-5:
       value: 22424703114646680e0b0227036c77151a072b292926237e38271427fb
