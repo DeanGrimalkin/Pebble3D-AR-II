@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class SwipeRotate: MonoBehaviour
 {
@@ -26,5 +27,12 @@ public class SwipeRotate: MonoBehaviour
                 transform.rotation = rotationY * transform.rotation;
             }
         }
+    }
+
+    public bool IsPointerOverUI(int fingerId)
+    {
+        EventSystem eventSystem = EventSystem.current;
+        return (eventSystem.IsPointerOverGameObject(fingerId)
+            && eventSystem.currentSelectedGameObject != null);
     }
 }

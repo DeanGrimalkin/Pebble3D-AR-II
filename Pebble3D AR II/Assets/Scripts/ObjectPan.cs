@@ -32,7 +32,7 @@ public class ObjectPan : MonoBehaviour
                     transform.position.z);
             }
 
-                transform.position = new Vector3(Mathf.Clamp(transform.position.x, -0.5f, 0.5f), Mathf.Clamp(transform.position.y, -0.5f, 0.5f), 0);
+                transform.position = new Vector3(Mathf.Clamp(transform.position.x, -5, 5), Mathf.Clamp(transform.position.y, -5, 5), 0);
         }
     }
 }
