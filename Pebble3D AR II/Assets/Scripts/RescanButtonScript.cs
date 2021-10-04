@@ -5,10 +5,11 @@ using UnityEngine;
 public class RescanButtonScript : MonoBehaviour
 {
     public GameObject Panel1;
+    public GameObject rescanButton;
     // Start is called before the first frame update
     void Start()
     {
-        this.gameObject.SetActive(true);
+        
     }
 
     // Update is called once per frame
@@ -16,12 +17,12 @@ public class RescanButtonScript : MonoBehaviour
     {
         if (Panel1.activeSelf == true)
         {
-            this.gameObject.SetActive(true);
+            rescanButton.SetActive(true);
         }
 
         else
         {
-            this.gameObject.SetActive(false);
+            rescanButton.SetActive(false);
         }
     }
 }
