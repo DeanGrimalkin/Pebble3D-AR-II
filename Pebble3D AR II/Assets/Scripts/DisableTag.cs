@@ -26,4 +26,15 @@ public class DisableTag : MonoBehaviour
         }
     }
 
+    public void DisableHelpPanels()
+    {
+        GameObject[] gameObjectArray = GameObject.FindGameObjectsWithTag("HelpPanel");
+
+        foreach (GameObject panelArray in gameObjectArray)
+        {
+            panelArray.SetActive(false);
+        }
+    }
+
+
 }
